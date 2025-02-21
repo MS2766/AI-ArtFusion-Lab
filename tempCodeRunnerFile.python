@@ -1,0 +1,7 @@
+import bcrypt
+
+try:
+    bcrypt_version = getattr(bcrypt, '__version__', None) or getattr(bcrypt, '__about__', {}).get('__version__', 'unknown')
+    print(f"bcrypt version: {bcrypt_version}")
+except AttributeError as e:
+    print(f"Error fetching bcrypt version: {e}")

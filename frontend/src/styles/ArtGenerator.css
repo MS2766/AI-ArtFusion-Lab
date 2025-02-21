@@ -1,0 +1,96 @@
+.art-generator-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.art-generator-content h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.art-generator-content input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.art-generator-content input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.art-generator-content button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #3E5151;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.art-generator-content button:hover {
+  background-color: #DECBA4;
+  transform: scale(1.05);
+}
+
+.art-generator-content button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.art-generator-content .error {
+  color: red;
+  margin-top: 20px;
+}
+
+.art-generator-content .image-container {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.art-generator-content .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.art-generator-content div {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.art-generator-content div:hover {
+  color: #DECBA4;
+  transform: scale(1.05);
+}
+
+.art-generator-content div::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.art-generator-content div:hover::after {
+  width: 100%;
+}

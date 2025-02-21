@@ -1,0 +1,105 @@
+/* Existing styles with updated navigation and layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+.style-transfer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.style-transfer-content h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.style-transfer-content input[type="file"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.style-transfer-content button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #3E5151;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.style-transfer-content button:hover {
+  background-color: #DECBA4;
+  transform: scale(1.05);
+}
+
+.style-transfer-content button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.style-transfer-content .error {
+  color: red;
+  margin-top: 20px;
+}
+
+.style-transfer-content .image-container {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.style-transfer-content .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-nav div {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.home-nav div:hover {
+  color: #DECBA4;
+  transform: scale(1.05);
+}
+
+.home-nav div::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.home-nav div:hover::after {
+  width: 100%;
+}
