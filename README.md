@@ -36,3 +36,19 @@ pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+### 3️⃣ Frontend Setup  
+#### Install Dependencies  
+```bash
+cd frontend
+npm install
+```
+
+#### Run React App  
+```bash
+npm start
+```
+
+## Usage  
+- **Art Generation:** Enter a text prompt and let the AI generate an artwork.  
+- **Style Transfer:** Upload a content image and a style image to create a fusion of both.  
+- **Save & Share:** Download and showcase your AI-generated artwork.
