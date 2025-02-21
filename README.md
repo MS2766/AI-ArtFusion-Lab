@@ -15,3 +15,24 @@ AI ArtFusion Lab is a web application that uses AI to generate stunning artworks
 🔹 **Backend:** FastAPI, PyTorch, Pillow, torchvision  
 🔹 **Database:** PostgreSQL (if applicable)  
 🔹 **Deployment:** Docker, Kubernetes, GitHub Actions  
+
+## Installation & Setup  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/AI-ArtFusionLab.git
+cd AI-ArtFusion-Lab
+```
+
+### 2️⃣ Backend Setup  
+#### Install Dependencies  
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+#### Run FastAPI Server  
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
