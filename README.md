@@ -52,3 +52,16 @@ npm start
 - **Art Generation:** Enter a text prompt and let the AI generate an artwork.  
 - **Style Transfer:** Upload a content image and a style image to create a fusion of both.  
 - **Save & Share:** Download and showcase your AI-generated artwork.
+
+## API Endpoints  
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| `POST` | `/art-generation/` | Generates AI artwork from text |
+| `POST` | `/style-transfer/` | Transfers artistic style to an image |
+
+## Contributing  
+1. **Fork** the repository.  
+2. **Create a branch** (`git checkout -b feature-branch`).  
+3. **Commit changes** (`git commit -m "Added new feature"`).  
+4. **Push** (`git push origin feature-branch`).  
+5. **Open a pull request** on GitHub.
