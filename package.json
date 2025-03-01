@@ -1,0 +1,12 @@
+{
+    "name": "ml-web-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "autopush": "git add . && git commit -m \"Auto-commit: Changes saved on $(date)\" && git push origin main"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
