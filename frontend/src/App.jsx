@@ -11,7 +11,6 @@ export const AuthContext = createContext();
 
 function App() {
   const [auth, setAuth] = useState({ token: null, isAuthenticated: false });
-
   const login = (token) => {
     setAuth({ token, isAuthenticated: true });
   };
